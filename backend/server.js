@@ -12,7 +12,14 @@ const app = express()
 const port = process.env.port || 4000;
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: [
+        'https://food-delivery-frontend-69x1.onrender.com',
+        'https://food-delivery-admin-a827.onrender.com'
+    ],
+    credentials: true
+}));
+
 
 //db connection
 connectDB()
