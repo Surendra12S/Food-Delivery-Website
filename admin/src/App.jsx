@@ -16,7 +16,7 @@ const App = () => {
   return (
     <div>
       <ToastContainer/>
-      <Navbar/>
+       <Navbar/>
       <hr/>
       <div className="app-content">
         <Sidebar/>
